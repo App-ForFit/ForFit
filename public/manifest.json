@@ -1,0 +1,13 @@
+{
+  "name": "Projeto 4",
+  "short_name": "Projeto 4",
+  "description": "Pequenas escolhas. Grandes mudanças.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#35B85A",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
