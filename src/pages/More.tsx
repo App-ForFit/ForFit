@@ -22,13 +22,15 @@ export default function More() {
       <h1 className="title-lg" style={{ marginBottom: 20 }}>Mais</h1>
 
       {profile && (
-        <Card style={{ display: 'flex', alignItems: 'center', gap: 14, marginBottom: 20, cursor: 'pointer' }} onClick={() => navigate('/perfil')}>
-          <Avatar name={profile.name} size={48} />
-          <div style={{ flex: 1 }}>
-            <div style={{ fontWeight: 700 }}>{profile.name}</div>
-            <div className="eyebrow">Ver meu perfil</div>
+        <Card style={{ marginBottom: 20, cursor: 'pointer' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 14 }} onClick={() => navigate('/perfil')}>
+            <Avatar name={profile.name} size={48} />
+            <div style={{ flex: 1 }}>
+              <div style={{ fontWeight: 700 }}>{profile.name}</div>
+              <div className="eyebrow">Ver meu perfil</div>
+            </div>
+            <span style={{ color: 'var(--gray-text)' }}>›</span>
           </div>
-          <span style={{ color: 'var(--gray-text)' }}>›</span>
         </Card>
       )}
 
